@@ -2,53 +2,153 @@ NAMA: M.RIDWAN ALMAHRI
 NIM: (312510157)
 KELAS: TI.25.A.2
 
+Laporan Praktikum Python
+1. Program latihan1.py
+Tujuan Program
 
-latihan1.py
-Deskripsi Tugas
-Program ini bertujuan untuk menampilkan N bilangan acak (random number) yang nilainya lebih kecil dari 0.5. Nilai N akan dimasukkan saat runtime. Program menggunakan kombinasi perulangan while dan fungsi random() dari modul random.
- Alur Algoritma
-1.	Impor Modul: Mengimpor fungsi random dari modul random.
-2.	Input N: Meminta pengguna memasukkan nilai integer untuk N (jumlah data yang akan ditampilkan).
-3.	Inisialisasi: Mengatur counter perulangan (i) dimulai dari 0.
-4.	Perulangan while: Perulangan akan terus berjalan selama i < N.
-5.	Generate Angka Acak: Di dalam loop, fungsi random.random() dipanggil untuk menghasilkan bilangan acak (r) antara $0.0$ hingga $1.0$.
-6.	Output: Bilangan acak tersebut dicetak bersama dengan nomor urut data ke-i + 1.
-7.	Increment: Nilai counter i ditingkatkan (i = i + 1).
-8.	Selesai: Setelah perulangan selesai, pesan "Selesai" ditampilkan.
- Hasil Eksekusi (latihan1.py)
-latihan2.py
- Deskripsi Tugas
-Program ini menghitung total laba usaha selama 8 bulan dengan modal awal Rp 100.000.000. Perhitungan laba didasarkan pada saldo bulan sebelumnya dan mengikuti skema persentase:
-•	Bulan ke-1 dan ke-2: Laba 0%.
-•	Bulan ke-3, ke-4, dan ke-5: Laba 1% dari saldo bulan sebelumnya.
-•	Bulan ke-6, ke-7, dan ke-8: Laba 5% dari saldo bulan sebelumnya.
+Menampilkan sejumlah bilangan acak sesuai dengan jumlah yang dimasukkan pengguna menggunakan perulangan while.
+
+Kode Program
+from random import random
+
+n = int(input("Masukkan nilai N: "))
+i = 0
+while i < n:
+    r = random()
+    print("Data ke-", i + 1, "=>", r)
+    i += 1
+
+print("Selesai")
+
 Alur Algoritma
-1.	Inisialisasi: Variabel modal diatur ke 100.000.000.
-2.	Perulangan for: Menggunakan perulangan for untuk iterasi dari bulan ke-1 hingga bulan ke-8 (range(1, 9)).
-3.	Logika Laba: Di dalam loop, menggunakan struktur kondisional (if-elif) untuk menentukan persentase laba bulanan berdasarkan nomor bulan.
-o	Jika bulan $\in \{1, 2\}$, laba_bulan = 0.
-o	Jika bulan $\in \{3, 4, 5\}$, laba_bulan = modal * 0.01.
-o	Jika bulan $\in \{6, 7, 8\}$, laba_bulan = modal * 0.05.
-4.	Update Saldo: Saldo modal diperbarui dengan menambahkan laba_bulan (modal += laba_bulan).
-5.	Output Bulanan: Mencetak laba yang diperoleh pada bulan tersebut.
-6.	Total Laba: Mencetak total laba setelah 8 bulan (diasumsikan laba adalah variabel yang menyimpan total laba yang dihitung secara kumulatif atau dihitung dari perbedaan total saldo akhir dengan modal awal). Berdasarkan kode, variabel laba tampaknya diakumulasi untuk menyimpan total laba.
-Hasil Eksekusi (latihan2.py)
-latihan3.py
-Deskripsi Tugas
-Program ini mensimulasikan mesin ATM sederhana dengan saldo awal Rp 1.000.000. Pengguna dapat memilih untuk Tarik Uang atau Keluar dari sistem.
+
+Program mengimpor fungsi random() dari modul random.
+
+Pengguna diminta memasukkan nilai N sebagai batas jumlah data acak yang akan ditampilkan.
+
+Variabel penghitung i diinisialisasi dengan nilai 0.
+
+Program menjalankan perulangan while selama nilai i lebih kecil dari N.
+
+Dalam setiap iterasi:
+
+Menghasilkan angka acak dengan random().
+
+Menampilkan data ke-i beserta angka acak tersebut.
+
+Nilai i ditambah 1 setiap kali loop dijalankan.
+
+Setelah perulangan selesai, program mencetak tulisan “Selesai”.
+
+Screenshot Hasil Program
+
+(Gambar dari file latihan1.py yang kamu kirim)
+📸
+
+
+2. Program latihan2.py
+Tujuan Program
+
+Menghitung dan menampilkan laba per bulan selama 8 bulan berdasarkan ketentuan persentase yang berbeda di setiap periode.
+
+Kode Program
+modal = 100000000
+laba = 0
+
+for bulan in range(1, 9):
+    if bulan in [1, 2]:
+        laba_bulan = 0
+    elif bulan in [3, 4]:
+        laba_bulan = modal * 0.01
+    elif bulan in [5, 6, 7]:
+        laba_bulan = modal * 0.05
+    elif bulan == 8:
+        laba_bulan = modal * 0.03
+
+    laba += laba_bulan
+    print(f"Laba bulan ke-{bulan} sebesar: {int(laba_bulan)}")
+
+print(f"\nTotal laba adalah: {int(laba)}")
+
 Alur Algoritma
-1.	Inisialisasi: Variabel saldo diatur ke 1.000.000.
-2.	Perulangan Utama while: Menggunakan while True untuk menampilkan menu ATM secara berulang hingga pengguna memilih untuk keluar.
-3.	Tampilan Menu: Mencetak pilihan menu (1. Tarik Uang, 2. Keluar).
-4.	Input Pilihan: Meminta pengguna memasukkan pilihan menu (pilihan).
-5.	Logika Tarik Uang (Pilihan 1):
-o	Meminta pengguna memasukkan jumlah_penarikan.
-o	Pengecekan Saldo: Jika jumlah_penarikan $\le$ saldo, maka:
-	saldo dikurangi dengan jumlah_penarikan.
-	Menampilkan pesan "Penarikan berhasil!".
-o	Saldo Tidak Cukup: Jika jumlah_penarikan $>$ saldo, menampilkan pesan "Saldo tidak cukup!".
-6.	Logika Keluar (Pilihan 2):
-o	Menampilkan pesan terima kasih.
-o	Menggunakan break untuk keluar dari perulangan while True, mengakhiri program.
+
+Inisialisasi modal sebesar 100 juta dan laba awal 0.
+
+Gunakan perulangan for dari bulan ke-1 sampai bulan ke-8.
+
+Tentukan laba per bulan dengan aturan:
+
+Bulan 1–2 → laba 0.
+
+Bulan 3–4 → 1% dari modal.
+
+Bulan 5–7 → 5% dari modal.
+
+Bulan 8 → 3% dari modal.
+
+Hitung laba setiap bulan dan tambahkan ke total laba (laba += laba_bulan).
+
+Tampilkan laba setiap bulan.
+
+Setelah loop selesai, tampilkan total laba seluruh periode.
+
+Screenshot Hasil Program
+
+📸
+
+
+3. Program latihan3.py
+Tujuan Program
+
+Membuat simulasi mesin ATM sederhana dengan fitur penarikan uang dan keluar dari menu.
+
+Kode Program
+saldo = 1000000
+
+while True:
+    print("\nSaldo saat ini: Rp", saldo)
+    print("1. Tarik Uang")
+    print("2. Keluar")
+
+    pilihan = input("Pilih menu (1/2): ")
+
+    if pilihan == "1":
+        tarik = int(input("Masukkan jumlah penarikan: "))
+        if tarik <= saldo:
+            saldo -= tarik
+            print("Penarikan berhasil!")
+        else:
+            print("Saldo tidak cukup!")
+    elif pilihan == "2":
+        print("Terima kasih telah menggunakan ATM!")
+        break
+
+Alur Algoritma
+
+Inisialisasi saldo awal sebesar Rp 1.000.000.
+
+Jalankan loop while True agar menu terus berulang.
+
+Tampilkan menu:
+
+(1) Tarik uang.
+
+(2) Keluar.
+
+Jika pengguna memilih 1:
+
+Minta jumlah uang yang ingin ditarik.
+
+Jika saldo mencukupi, kurangi saldo dan tampilkan pesan berhasil.
+
+Jika tidak cukup, tampilkan pesan kesalahan.
+
+Jika pengguna memilih 2:
+
+Tampilkan pesan terima kasih dan keluar dari program dengan break.
+
+Screenshot Hasil Program
+
+📸
 
 
