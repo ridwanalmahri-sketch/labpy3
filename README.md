@@ -1,5 +1,4 @@
-LANGKAH LANGKAH LAPORAN PRAKTIKUM 3
-
+PENJELASAN ALUR ALGORITMA
 
 Program latihan1.py
 
@@ -103,7 +102,7 @@ o	Minta jumlah uang yang ingin ditarik.
 o	Jika saldo mencukupi, kurangi saldo dan tampilkan pesan berhasil.
 o	Jika tidak cukup, tampilkan pesan kesalahan.
 5.	Jika pengguna memilih 2:
-   <img width="1366" height="768" alt="Screenshot (38)" src="https://github.com/user-attachments/assets/647e6c60-ef84-413b-9ec5-0355acc2469f" />
-
 o	Tampilkan pesan terima kasih dan keluar dari program dengan break.
+
+   <img width="1366" height="768" alt="Screenshot (38)" src="https://github.com/user-attachments/assets/647e6c60-ef84-413b-9ec5-0355acc2469f" />
 
