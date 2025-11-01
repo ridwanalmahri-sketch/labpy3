@@ -1,9 +1,7 @@
 Laporan Praktikum Python
 1. Program latihan1.py
 Tujuan Program
-
 Menampilkan sejumlah bilangan acak sesuai dengan jumlah yang dimasukkan pengguna menggunakan perulangan while.
-
 Kode Program
 from random import random
 
@@ -15,38 +13,21 @@ while i < n:
     i += 1
 
 print("Selesai")
-
 Alur Algoritma
-
-Program mengimpor fungsi random() dari modul random.
-
-Pengguna diminta memasukkan nilai N sebagai batas jumlah data acak yang akan ditampilkan.
-
-Variabel penghitung i diinisialisasi dengan nilai 0.
-
-Program menjalankan perulangan while selama nilai i lebih kecil dari N.
-
-Dalam setiap iterasi:
-
-Menghasilkan angka acak dengan random().
-
-Menampilkan data ke-i beserta angka acak tersebut.
-
-Nilai i ditambah 1 setiap kali loop dijalankan.
-
-Setelah perulangan selesai, program mencetak tulisan “Selesai”.
-
-Screenshot Hasil Program
-
-(Gambar dari file latihan1.py yang kamu kirim)
-📸
+1.	Program mengimpor fungsi random() dari modul random.
+2.	Pengguna diminta memasukkan nilai N sebagai batas jumlah data acak yang akan ditampilkan.
+3.	Variabel penghitung i diinisialisasi dengan nilai 0.
+4.	Program menjalankan perulangan while selama nilai i lebih kecil dari N.
+5.	Dalam setiap iterasi:
+o	Menghasilkan angka acak dengan random().
+o	Menampilkan data ke-i beserta angka acak tersebut.
+o	Nilai i ditambah 1 setiap kali loop dijalankan.
+6.	Setelah perulangan selesai, program mencetak tulisan “Selesai”.
 
 
 2. Program latihan2.py
 Tujuan Program
-
 Menghitung dan menampilkan laba per bulan selama 8 bulan berdasarkan ketentuan persentase yang berbeda di setiap periode.
-
 Kode Program
 modal = 100000000
 laba = 0
@@ -65,39 +46,22 @@ for bulan in range(1, 9):
     print(f"Laba bulan ke-{bulan} sebesar: {int(laba_bulan)}")
 
 print(f"\nTotal laba adalah: {int(laba)}")
-
 Alur Algoritma
+1.	Inisialisasi modal sebesar 100 juta dan laba awal 0.
+2.	Gunakan perulangan for dari bulan ke-1 sampai bulan ke-8.
+3.	Tentukan laba per bulan dengan aturan:
+o	Bulan 1–2 → laba 0.
+o	Bulan 3–4 → 1% dari modal.
+o	Bulan 5–7 → 5% dari modal.
+o	Bulan 8 → 3% dari modal.
+4.	Hitung laba setiap bulan dan tambahkan ke total laba (laba += laba_bulan).
+5.	Tampilkan laba setiap bulan.
+6.	Setelah loop selesai, tampilkan total laba seluruh periode.
 
-Inisialisasi modal sebesar 100 juta dan laba awal 0.
-
-Gunakan perulangan for dari bulan ke-1 sampai bulan ke-8.
-
-Tentukan laba per bulan dengan aturan:
-
-Bulan 1–2 → laba 0.
-
-Bulan 3–4 → 1% dari modal.
-
-Bulan 5–7 → 5% dari modal.
-
-Bulan 8 → 3% dari modal.
-
-Hitung laba setiap bulan dan tambahkan ke total laba (laba += laba_bulan).
-
-Tampilkan laba setiap bulan.
-
-Setelah loop selesai, tampilkan total laba seluruh periode.
-
-Screenshot Hasil Program
-
-📸
-
-
+   
 3. Program latihan3.py
 Tujuan Program
-
 Membuat simulasi mesin ATM sederhana dengan fitur penarikan uang dan keluar dari menu.
-
 Kode Program
 saldo = 1000000
 
@@ -118,27 +82,16 @@ while True:
     elif pilihan == "2":
         print("Terima kasih telah menggunakan ATM!")
         break
-
 Alur Algoritma
+1.	Inisialisasi saldo awal sebesar Rp 1.000.000.
+2.	Jalankan loop while True agar menu terus berulang.
+3.	Tampilkan menu:
+o	(1) Tarik uang.
+o	(2) Keluar.
+4.	Jika pengguna memilih 1:
+o	Minta jumlah uang yang ingin ditarik.
+o	Jika saldo mencukupi, kurangi saldo dan tampilkan pesan berhasil.
+o	Jika tidak cukup, tampilkan pesan kesalahan.
+5.	Jika pengguna memilih 2:
+o	Tampilkan pesan terima kasih dan keluar dari program dengan break.
 
-Inisialisasi saldo awal sebesar Rp 1.000.000.
-
-Jalankan loop while True agar menu terus berulang.
-
-Tampilkan menu:
-
-(1) Tarik uang.
-
-(2) Keluar.
-
-Jika pengguna memilih 1:
-
-Minta jumlah uang yang ingin ditarik.
-
-Jika saldo mencukupi, kurangi saldo dan tampilkan pesan berhasil.
-
-Jika tidak cukup, tampilkan pesan kesalahan.
-
-Jika pengguna memilih 2:
-
-Tampilkan pesan terima kasih dan keluar dari program dengan break.
