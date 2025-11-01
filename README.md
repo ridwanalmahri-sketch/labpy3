@@ -1,5 +1,6 @@
-Laporan Praktikum Python
-1. Program latihan1.py
+Laporan Praktikum 3
+
+Program latihan1.py
 Tujuan Program
 Menampilkan sejumlah bilangan acak sesuai dengan jumlah yang dimasukkan pengguna menggunakan perulangan while.
 Kode Program
@@ -23,9 +24,10 @@ o	Menghasilkan angka acak dengan random().
 o	Menampilkan data ke-i beserta angka acak tersebut.
 o	Nilai i ditambah 1 setiap kali loop dijalankan.
 6.	Setelah perulangan selesai, program mencetak tulisan “Selesai”.
+<img width="1366" height="768" alt="Screenshot (40)" src="https://github.com/user-attachments/assets/60c3f433-275e-42c9-8038-b9928aeecd3a" />
 
 
-2. Program latihan2.py
+Program latihan2.py
 Tujuan Program
 Menghitung dan menampilkan laba per bulan selama 8 bulan berdasarkan ketentuan persentase yang berbeda di setiap periode.
 Kode Program
@@ -57,9 +59,10 @@ o	Bulan 8 → 3% dari modal.
 4.	Hitung laba setiap bulan dan tambahkan ke total laba (laba += laba_bulan).
 5.	Tampilkan laba setiap bulan.
 6.	Setelah loop selesai, tampilkan total laba seluruh periode.
+<img width="1366" height="768" alt="Screenshot (37)" src="https://github.com/user-attachments/assets/854559cf-99ee-459e-ba18-8df7f22de261" />
 
-   
-3. Program latihan3.py
+
+Program latihan3.py
 Tujuan Program
 Membuat simulasi mesin ATM sederhana dengan fitur penarikan uang dan keluar dari menu.
 Kode Program
@@ -85,7 +88,7 @@ while True:
 Alur Algoritma
 1.	Inisialisasi saldo awal sebesar Rp 1.000.000.
 2.	Jalankan loop while True agar menu terus berulang.
-3.	Tampilkan menu:
+
 o	(1) Tarik uang.
 o	(2) Keluar.
 4.	Jika pengguna memilih 1:
@@ -93,5 +96,7 @@ o	Minta jumlah uang yang ingin ditarik.
 o	Jika saldo mencukupi, kurangi saldo dan tampilkan pesan berhasil.
 o	Jika tidak cukup, tampilkan pesan kesalahan.
 5.	Jika pengguna memilih 2:
+   <img width="1366" height="768" alt="Screenshot (38)" src="https://github.com/user-attachments/assets/647e6c60-ef84-413b-9ec5-0355acc2469f" />
+
 o	Tampilkan pesan terima kasih dan keluar dari program dengan break.
 
