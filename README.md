@@ -1,6 +1,9 @@
-Laporan Praktikum 3
+LANGKAH LANGKAH LAPORAN PRAKTIKUM 3
+
 
 Program latihan1.py
+
+
 Tujuan Program
 Menampilkan sejumlah bilangan acak sesuai dengan jumlah yang dimasukkan pengguna menggunakan perulangan while.
 Kode Program
@@ -28,6 +31,8 @@ o	Nilai i ditambah 1 setiap kali loop dijalankan.
 
 
 Program latihan2.py
+
+
 Tujuan Program
 Menghitung dan menampilkan laba per bulan selama 8 bulan berdasarkan ketentuan persentase yang berbeda di setiap periode.
 Kode Program
@@ -63,6 +68,8 @@ o	Bulan 8 → 3% dari modal.
 
 
 Program latihan3.py
+
+
 Tujuan Program
 Membuat simulasi mesin ATM sederhana dengan fitur penarikan uang dan keluar dari menu.
 Kode Program
